@@ -36,3 +36,5 @@ vim.opt.guifont = "Monaco:h12"
 
 vim.cmd("set statusline+=%{expand('%:~:.')}") -- Adds relative file path to the status line
 
+-- tmux fuzzy find sessionizer
+vim.api.nvim_set_keymap('n', '<C-f>', ':!tmux-sessionizer<CR>', { noremap = true, silent = true })
