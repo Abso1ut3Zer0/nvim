@@ -35,3 +35,6 @@ vim.g.mapleader = " "
 vim.opt.guifont = "Monaco:h12"
 
 vim.cmd("set statusline+=%{expand('%:~:.')}") -- Adds relative file path to the status line
+
+-- tmux command
+vim.api.nvim_set_keymap('n', '<C-f>', ':silent !tmux neww tmux-sessionizer<CR>', { noremap = true, silent = true })
