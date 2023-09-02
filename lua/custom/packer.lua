@@ -34,9 +34,6 @@ return require('packer').startup(function(use)
 	use('tpope/vim-commentary')
 	use('tpope/vim-surround')
 
-	vim.g.airline_theme = 'minimalist'
-	vim.g.airline_powerline_fonts = 1
-
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v2.x',
