@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/michaelhart/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["git-worktree.nvim"] = {
+    loaded = true,
+    path = "/home/michaelhart/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
+    url = "https://github.com/theprimeagen/git-worktree.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/michaelhart/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -164,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/michaelhart/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/home/michaelhart/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
   },
   ["vim-fugitive"] = {
     loaded = true,
