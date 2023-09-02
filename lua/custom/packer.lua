@@ -27,9 +27,15 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
+
+	use('vim-airline/vim-airline')
+	use('vim-airline/vim-airline-themes')
 	use('tpope/vim-fugitive')
 	use('tpope/vim-commentary')
 	use('tpope/vim-surround')
+
+	vim.g.airline_theme = 'minimalist'
+	vim.g.airline_powerline_fonts = 1
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -42,31 +48,31 @@ return require('packer').startup(function(use)
 			run = function()
 				pcall(vim.cmd, 'MasonUpdate')
 			end,
-		},
-		{'williamboman/mason-lspconfig.nvim'}, -- Optional
+			},
+			{'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-		-- Autocompletion
-		{'hrsh7th/nvim-cmp'},     -- Required
-		{'hrsh7th/cmp-nvim-lsp'}, -- Required
-		{'L3MON4D3/LuaSnip'},     -- Required
+			-- Autocompletion
+			{'hrsh7th/nvim-cmp'},     -- Required
+			{'hrsh7th/cmp-nvim-lsp'}, -- Required
+			{'L3MON4D3/LuaSnip'},     -- Required
+		}
 	}
-}
 
-use {
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
-	run = ":MasonUpdate" -- :MasonUpdate updates registry contents
-}
+	use {
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+	}
 
-use {
-	'hrsh7th/nvim-cmp',
-	'hrsh7th/cmp-buffer',
-	'hrsh7th/cmp-nvim-lsp',
-}
+	use {
+		'hrsh7th/nvim-cmp',
+		'hrsh7th/cmp-buffer',
+		'hrsh7th/cmp-nvim-lsp',
+	}
 
-require("mason").setup()
-require("mason-lspconfig").setup()
+	require("mason").setup()
+	require("mason-lspconfig").setup()
 
 end)
 
