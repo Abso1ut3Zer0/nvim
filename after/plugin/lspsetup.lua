@@ -11,8 +11,9 @@ lsp.ensure_installed({
     'rust_analyzer',
     'clangd',
     'gopls',
+	'elixirls',
     'lua_ls',
-    'pyre',
+	'pylsp',
     'solang',
     'sqlls',
 })
