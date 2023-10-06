@@ -72,6 +72,31 @@ return require("packer").startup(function(use)
 		"hrsh7th/cmp-nvim-lsp",
 	}
 
+	use "Exafunction/codeium.vim"
+
+	use {
+		"nvim-neorg/neorg",
+		config = function()
+			require('neorg').setup {
+				load = {
+					["core.defaults"] = {}, -- Loads default behaviour
+					["core.concealer"] = {}, -- Adds pretty icons to your documents
+					["core.dirman"] = { -- Manages Neorg workspaces
+						config = {
+							workspaces = {
+								notes = "~/notes",
+								fc_tracker = "~/fc_tracker",
+								fcshield_tracker = "~/fcshield_tracker",
+							},
+						},
+					},
+				},
+			}
+		end,
+		run = ":Neorg sync-parsers",
+		requires = "nvim-lua/plenary.nvim",
+	}
+
 	require("mason").setup()
 	require("mason-lspconfig").setup()
 

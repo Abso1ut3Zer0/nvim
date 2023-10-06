@@ -39,3 +39,6 @@ vim.cmd("set statusline+=%{expand('%:~:.')}") -- Adds relative file path to the 
 -- tmux command
 vim.api.nvim_set_keymap('n', '<C-f>', ':silent !tmux neww tmux-sessionizer<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h>', ':silent !tmux neww cht.sh<CR>', { noremap = true, silent = true })
+
+-- neorg
+vim.cmd [[ autocmd FileType norg let maplocalleader = "," ]]
