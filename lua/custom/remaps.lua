@@ -43,5 +43,3 @@ vim.keymap.set("n", "<leader>el", "$")
 
 -- Move to beginning of current line
 vim.keymap.set("n", "<leader>bl", "^")
-
-vim.api.nvim_set_keymap('n', '<leader>kb', '<cmd>Telescope keymaps<CR>', { noremap = true, silent = true })

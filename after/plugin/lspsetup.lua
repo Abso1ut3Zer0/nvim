@@ -70,10 +70,10 @@ vim.api.nvim_set_keymap('n', '<leader>qr', ':cclose<CR>', {noremap = true, silen
 vim.api.nvim_set_keymap('n', '<leader>rn', ':lua vim.lsp.buf.rename()<CR>', {noremap = true, silent = true})
 
 -- Code action for whole file
-vim.api.nvim_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>k', '<cmd>lua vim.lsp.buf.code_action()<CR>', {noremap = true, silent = true})
 
 -- Code action for a range, such as highlighted scope
-vim.api.nvim_set_keymap('v', '<leader>rca', '<cmd>lua vim.lsp.buf.range_code_action()<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<leader>,', '<cmd>lua vim.lsp.buf.range_code_action()<CR>', {noremap = true, silent = true})
 
 -- Change signature (assuming a custom function 'change_signature' is implemented to handle the signature change)
 vim.api.nvim_set_keymap('n', '<leader>cs', '<cmd>lua change_signature()<CR>', {noremap = true, silent = true})
