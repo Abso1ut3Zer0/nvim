@@ -125,7 +125,7 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   neorg = {
-    config = { "\27LJ\2\n€\2\0\0\a\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0035\4\t\0005\5\a\0005\6\6\0=\6\b\5=\5\n\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\0\1\0\3\nnotes\f~/notes\21fcshield_tracker\23~/fcshield_tracker\15fc_tracker\17~/fc_tracker\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
+    config = { "\27LJ\2\n±\2\0\0\a\0\16\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0034\4\0\0=\4\6\0034\4\0\0=\4\a\0035\4\v\0005\5\t\0005\6\b\0=\6\n\5=\5\f\4=\4\r\3=\3\15\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\0\1\0\3\15fc_tracker\17~/fc_tracker\21fcshield_tracker\23~/fcshield_tracker\nnotes\f~/notes\25core.export.markdown\16core.export\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
     loaded = true,
     path = "/Users/mike/.local/share/nvim/site/pack/packer/start/neorg",
     url = "https://github.com/nvim-neorg/neorg"
@@ -200,7 +200,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: neorg
 time([[Config for neorg]], true)
-try_loadstring("\27LJ\2\n€\2\0\0\a\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0035\4\t\0005\5\a\0005\6\6\0=\6\b\5=\5\n\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\0\1\0\3\nnotes\f~/notes\21fcshield_tracker\23~/fcshield_tracker\15fc_tracker\17~/fc_tracker\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
+try_loadstring("\27LJ\2\n±\2\0\0\a\0\16\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\14\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0034\4\0\0=\4\6\0034\4\0\0=\4\a\0035\4\v\0005\5\t\0005\6\b\0=\6\n\5=\5\f\4=\4\r\3=\3\15\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\0\1\0\3\15fc_tracker\17~/fc_tracker\21fcshield_tracker\23~/fcshield_tracker\nnotes\f~/notes\25core.export.markdown\16core.export\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
 time([[Config for neorg]], false)
 
 _G._packer.inside_compile = false

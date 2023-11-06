@@ -81,6 +81,8 @@ return require("packer").startup(function(use)
 				load = {
 					["core.defaults"] = {}, -- Loads default behaviour
 					["core.concealer"] = {}, -- Adds pretty icons to your documents
+					["core.export"] = {}, -- Ability to export to other markdown files
+					["core.export.markdown"] = {}, -- Ability to export to markdown
 					["core.dirman"] = { -- Manages Neorg workspaces
 						config = {
 							workspaces = {
