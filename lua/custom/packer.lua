@@ -16,14 +16,6 @@ return require("packer").startup(function(use)
 	}
 
 	use "rebelot/kanagawa.nvim"
-	-- use({
-	-- 	"rose-pine/neovim",
-	-- 	as = "rose-pine",
-	-- 	config = function()
-	-- 		vim.cmd("colorscheme rose-pine")
-	-- 	end
-	-- })
-
 	use("theprimeagen/git-worktree.nvim")
 
 
@@ -72,7 +64,8 @@ return require("packer").startup(function(use)
 		"hrsh7th/cmp-nvim-lsp",
 	}
 
-	use "Exafunction/codeium.vim"
+	-- codeium is a github copilot replacement
+	-- use "Exafunction/codeium.vim"
 
 	use {
 		"nvim-neorg/neorg",

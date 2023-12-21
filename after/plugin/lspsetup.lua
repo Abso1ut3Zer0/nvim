@@ -2,6 +2,11 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({buffer = bufnr})
+	local opts = {buffer = bufnr}
+
+	vim.keymap.set({'n'}, '<leader>fm', function()
+		vim.lsp.buf.format({async = false, timeout_ms = 5000})
+	end, opts)
 end)
 
 lsp.ensure_installed({
@@ -77,4 +82,3 @@ vim.api.nvim_set_keymap('v', '<leader>,', '<cmd>lua vim.lsp.buf.range_code_actio
 
 -- Change signature (assuming a custom function 'change_signature' is implemented to handle the signature change)
 vim.api.nvim_set_keymap('n', '<leader>cs', '<cmd>lua change_signature()<CR>', {noremap = true, silent = true})
-
