@@ -41,3 +41,13 @@ vim.api.nvim_set_keymap('n', '<C-f>', ':silent !tmux neww tmux-sessionizer<CR>',
 
 -- neorg
 vim.cmd [[ autocmd FileType norg let maplocalleader = "," ]]
+
+-- text wrapping for particular filetypes
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = {"*.md", "*.txt", "*.norg"},
+  callback = function()
+    vim.opt_local.wrap = true
+	vim.opt_local.linebreak = true
+	vim.opt.columns = 120
+  end,
+})
