@@ -48,6 +48,5 @@ vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
   callback = function()
     vim.opt_local.wrap = true
 	vim.opt_local.linebreak = true
-	vim.opt.columns = 120
   end,
 })
