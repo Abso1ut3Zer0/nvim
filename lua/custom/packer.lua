@@ -29,6 +29,8 @@ return require("packer").startup(function(use)
 	use("tpope/vim-commentary")
 	use("tpope/vim-surround")
 	use("tpope/vim-dadbod")
+	use("jpalardy/vim-slime")
+	use("lervag/vimtex")
 
 	use {
 		"VonHeikemen/lsp-zero.nvim",

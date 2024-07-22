@@ -44,7 +44,7 @@ vim.cmd [[ autocmd FileType norg let maplocalleader = "," ]]
 
 -- text wrapping for particular filetypes
 vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
-  pattern = {"*.md", "*.txt", "*.norg"},
+  pattern = {"*.md", "*.txt", "*.norg", "*.tex"},
   callback = function()
     vim.opt_local.wrap = true
 	vim.opt_local.linebreak = true

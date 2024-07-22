@@ -33,3 +33,11 @@ vim.keymap.set("n", "<leader>el", "$")
 
 -- Move to beginning of current line
 vim.keymap.set("n", "<leader>bl", "^")
+
+-- Remove all default vim-slime maps
+vim.g.slime_no_mappings = 1
+
+-- VimTeX remaps
+vim.g.vimtex_view_method = "skim"
+vim.g.vimtex_compiler_progname = "nvr"
+vim.g.vimtex_syntax_enabled = 0
