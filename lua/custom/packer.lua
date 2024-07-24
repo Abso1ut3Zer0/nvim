@@ -66,34 +66,6 @@ return require("packer").startup(function(use)
 		"hrsh7th/cmp-nvim-lsp",
 	}
 
-	-- codeium is a github copilot replacement
-	-- use "Exafunction/codeium.vim"
-
-	use {
-		"nvim-neorg/neorg",
-		config = function()
-			require('neorg').setup {
-				load = {
-					["core.defaults"] = {}, -- Loads default behaviour
-					["core.concealer"] = {}, -- Adds pretty icons to your documents
-					["core.export"] = {}, -- Ability to export to other markdown files
-					["core.export.markdown"] = {}, -- Ability to export to markdown
-					["core.dirman"] = { -- Manages Neorg workspaces
-						config = {
-							workspaces = {
-								notes = "~/notes",
-								fc_tracker = "~/fc_tracker",
-								fcshield_tracker = "~/fcshield_tracker",
-							},
-						},
-					},
-				},
-			}
-		end,
-		run = ":Neorg sync-parsers",
-		requires = "nvim-lua/plenary.nvim",
-	}
-
 	require("mason").setup()
 	require("mason-lspconfig").setup()
 
