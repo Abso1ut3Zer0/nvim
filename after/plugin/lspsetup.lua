@@ -21,6 +21,7 @@ lsp.ensure_installed({
 	'pylsp',
     'solang',
     'sqlls',
+	'zls',
 })
 
 lsp.setup({
