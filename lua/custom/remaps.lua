@@ -41,3 +41,7 @@ vim.g.slime_no_mappings = 1
 vim.g.vimtex_view_method = "skim"
 vim.g.vimtex_compiler_progname = "nvr"
 vim.g.vimtex_syntax_enabled = 0
+
+-- Vertical Split
+vim.keymap.set("n", "<leader>vs", "<cmd>vsplit<CR>")
+
