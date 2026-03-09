@@ -6,7 +6,7 @@ return {
 			ensure_installed = {
 				"javascript", "typescript", "java", "json", "yaml", "proto",
 				"python", "go", "rust", "zig", "elixir", "heex", "eex",
-				"c", "cpp", "html", "http", "solidity", "latex", "lua",
+				"c", "cpp", "html", "http", "solidity", "lua",
 				"vim", "vimdoc", "query", "gitcommit", "git_rebase",
 			},
 			sync_install = false,

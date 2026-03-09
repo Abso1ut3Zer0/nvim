@@ -17,12 +17,12 @@ return {
 					local opts = { buffer = event.buf }
 
 					vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-					vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-					vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-					vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-					vim.keymap.set("n", "go", vim.lsp.buf.type_definition, opts)
-					vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references<cr>", opts)
-					vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, opts)
+					vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
+					vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, opts)
+					vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, opts)
+					vim.keymap.set("n", "<leader>go", vim.lsp.buf.type_definition, opts)
+					vim.keymap.set("n", "<leader>gr", "<cmd>Telescope lsp_references<cr>", opts)
+					vim.keymap.set("n", "<leader>gs", vim.lsp.buf.signature_help, opts)
 
 					vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 					vim.keymap.set("n", "<leader>fm", function()
